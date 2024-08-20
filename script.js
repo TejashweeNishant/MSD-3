@@ -11,11 +11,15 @@ button.addEventListener('click', () => {
         text.textContent = 'Toggled Text';
         button.textContent = 'Reset';
         container.style.backgroundColor = 'lightcoral';
+        toggleButton.style.color="red";
+        text.style.color="white";
     } else {
         // Revert to initial state
         text.textContent = 'Initial Text';
         button.textContent = 'Click me!';
         container.style.backgroundColor = 'lightblue';
+        toggleButton.style.color="blue";
+        text.style.color="black";
     }
     
     toggled = !toggled; // Toggle state
